@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .browser {
+      background: white;
+    }
+
+    .browser>h2,
+    p {
+      margin: 4px;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<div>
+
+  <body>
+    <form action="/" method="post">
+      <input type="text" name="titlepara" id="">
+      <br> <textarea name="paramk" id="" cols="30" rows="10"></textarea>
+      <br> <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+<% for(i=0;i<art.length;i++){ %>
+  <div >
+
+    <article class="browser">
+      <h1>
+        <%= art[i]%>
+      </h1>
+      <p>
+        <%= para[i] %>
+      </p>
+    </article>
+  </div>
+  <% } %>
+    </body>
+
+</html>
